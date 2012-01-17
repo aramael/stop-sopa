@@ -66,12 +66,14 @@ Over coming days you'll be hearing from the many businesses, advocacy organizati
 var text = null;
 var spot = null;
 var box = null;
+var seal = null;
 var boxProperty = '';
 
 init();
 
 function init() {
     text = document.getElementById('tsb-text');
+    seal = document.getElementById('usa-seal');
     spot = document.getElementById('tsb-spot');
     box = document.getElementById('tsb-box');
     
@@ -83,7 +85,7 @@ function init() {
         boxProperty = 'boxShadow';
     }
 
-    if (text && spot && box) {
+    if (text && spot && box && seal) {
         document.getElementById('text-shadow-box').onmousemove = onMouseMove;
         document.getElementById('text-shadow-box').ontouchmove = function (e) {e.preventDefault(); e.stopPropagation(); onMouseMove({clientX: e.touches[0].clientX, clientY: e.touches[0].clientY});};
     }

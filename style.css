@@ -41,7 +41,7 @@ body {
 #text-shadow-box #tsb-link {
     position: absolute;
 	font-family:'Stint Ultra Condensed' !important;
-    top: 60%;
+    top: 61%;
     left: 0;
     width: 100%;
     height: 1em;
@@ -59,7 +59,7 @@ body {
 }
 
 #text-shadow-box #tsb-link a {
-    color: #999;
+    color: #F00;
     text-decoration: none;
 }
 
